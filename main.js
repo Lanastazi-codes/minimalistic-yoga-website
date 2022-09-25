@@ -1,6 +1,8 @@
 const burger = document.querySelector('.burger');
 const links = document.querySelectorAll('.list__link');
 
+gsap.set("body", { overflowX: "hidden" });
+
 //burger
 burger.addEventListener('click', () => {
 
