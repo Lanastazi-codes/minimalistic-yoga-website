@@ -1,0 +1,193 @@
+@font-face {
+    font-family: "argonite";
+    src: url('./assets/stone\ orgonite.woff');
+}
+
+:root{
+    --main-color: #f8b281;
+    --secondary-color: #1b1b1b;
+}
+
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%
+}
+
+body{
+    color: var(--secondary-color);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    padding: 5%;
+}
+
+a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 125%;
+    padding: 1rem 0;
+}
+
+h3{
+    font-size: 1.25rem;
+    line-height: 125%;
+}
+
+/* header */
+
+.header{
+    min-height: 100vh;
+    background: url('./assets/hero.png') no-repeat center;
+    width: 100vw;
+    background-size: cover;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav__list {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(100%);
+    font-size: 2rem;
+}
+
+.item__link:hover,
+.item__link:focus{
+    text-decoration: underline;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger{
+    cursor: pointer;
+    z-index: 3;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-heading{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-family: "argonite", sans-serif;
+}
+
+.header__logo-img{
+    width: 1.5rem;
+}
+
+.header__content{
+    margin-top: 25vh;
+    font-family: "argonite", sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.424);
+    text-align: center;
+}
+
+.content__subheading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.424);
+}
+
+button{
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.220);
+    margin: 1rem;
+}
+
+.ctas{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta-main{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    
+}
+.cta-sec{
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* classes section */
+
+.classes{
+    text-align: center;
+    font-family: "argonite", sans-serif;
+}
+
+.content__subheading{
+    text-shadow: none;
+}
+
+.classes__videos video{
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.pilates,
+.yoga,
+.meditation{
+    position: relative;
+}
+
+.classes__videos h3{
+    position: absolute;
+    color: var(--main-color);
+    text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.424);
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    font-size: 2rem;
+}
+
+/* about section */
+
+.our-story__heading{
+    font-family: "argonite", sans-serif;
+    text-align: center;
+}
+
+.our-story__text{
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+
+.our-story__img{
+    width: 100%;
+    margin-top: 2rem;
+}
